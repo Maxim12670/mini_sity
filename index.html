@@ -97,7 +97,6 @@
         padding: 8px 12px;
         border-radius: 6px;
         transition: background 0.2s;
-        background: #efdcfa;
         white-space: nowrap;
       }
 
@@ -193,10 +192,6 @@
       }
 
       .hero-text {
-        box-sizing: border-box;
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 25px;
         max-width: 480px;
         color: #1a1a1a;
       }
@@ -389,17 +384,15 @@
       <span class="hero-dot"></span>
 
       <div class="hero-content">
-        <div>
-          <div class="hero-text">
-            <h1>ПОСЕЩЕНИЕ МУЗЕЯ</h1>
-            <p>
-              Когда открывается запись, что делать, если все места уже заняты,
-              как записать целый класс и что нужно знать гостю-иностранцу —
-              собрали все ответы на одной странице
-            </p>
-          </div>
+        <div class="hero-text">
+          <h1>ПОСЕЩЕНИЕ МУЗЕЯ</h1>
+          <p>
+            Когда открывается запись, что делать, если все места уже заняты, как
+            записать целый класс и что нужно знать гостю-иностранцу — собрали
+            все ответы на одной странице
+          </p>
 
-          <div class="hero-actions" style="margin-top: 20px">
+          <div class="hero-actions">
             <a
               class="btn-more"
               href="https://museum.cbr.ru/visit/"
@@ -408,14 +401,16 @@
               ПОДРОБНЕЕ
             </a>
             <div class="separator"></div>
-            <div class="slider-controls"></div>
+            <div class="slider-controls">
+              <button class="nav-btn" aria-label="Предыдущий">◀</button>
+              <button class="nav-btn" aria-label="Следующий">▶</button>
+            </div>
             <span class="counter">5/5</span>
           </div>
         </div>
 
         <div class="hero-banner">
           <img
-            style="width: 50%"
             src="index.png"
             alt="Коллаж музея: сундук, монета, портрет, стул"
           />
